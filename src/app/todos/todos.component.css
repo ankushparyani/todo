@@ -1,0 +1,29 @@
+.todos{
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+  padding-left: 42%;
+}
+
+.todos li:hover .controls{
+	display:inline-block;
+}
+
+.todo {
+	background-color: #EEE;
+	margin: .5em;
+	padding: .3em 0;
+	height: 1.6em;
+	border-radius: 4px;
+}
+input{
+	border: none;
+	background-color: #EEE;
+}
+.complete{
+    text-decoration: line-through;
+}
+.controls{
+	display:none;
+}

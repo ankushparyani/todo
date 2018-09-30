@@ -1,0 +1,8 @@
+<button (click)="addTodo()">+</button>
+<ul class="todos">
+	<li class="todo" *ngFor="let todo of myTodos" >
+		<button class="controls" (click)="completeTodo(todo)">✓</button>
+		<input [class.complete]="todo.isCompleted === true" [(ngModel)] = "todo.todoText" placeholder="type your #todo here"/>
+		<button class="controls" (click)="deleteTodo(todo)">x</button>
+	</li>
+</ul>
